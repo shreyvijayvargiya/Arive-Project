@@ -31,6 +31,7 @@ const Address = () => {
 
     return (
         <div className="p-10">
+            <p className="text-2xl text-center my-4">Welcome to Arive pizza ordering application</p>
             <form className="p-10 bg-gray-50 w-2/5 shadow-md mx-auto" onSubmit={handleSubmit}>
                 <p className="text-xl ">Fill adress to place order</p>
                 <br />
