@@ -1,1 +1,2 @@
-export const ADD_USER_DETAIL = 'ADD_USER_DETAIL';
+export const ADD_USER_DETAIL = "ADD_USER_DETAIL";
+export const ADD_PIZZA_DETAILS = "ADD_PIZZA_DETAILS";

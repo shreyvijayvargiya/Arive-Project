@@ -1,7 +1,8 @@
-import { ADD_USER_DETAIL } from '../constants';
+import { ADD_USER_DETAIL, ADD_PIZZA_DETAILS } from '../constants';
 
 const initialState = {
-    userDetails: []
+    userDetails: [],
+    pizzaDetails: null
 };
 export const reducer = (state = initialState, action) => {
     switch(action.type){
@@ -9,6 +10,12 @@ export const reducer = (state = initialState, action) => {
             return {
                 ...state, 
                 userDetails: action.payload
+            }
+        }
+        case ADD_PIZZA_DETAILS: {
+            return {
+                ...state,
+                pizzaDetails: action.payload
             }
         }
         default:
