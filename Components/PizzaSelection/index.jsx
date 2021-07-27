@@ -40,9 +40,9 @@ const PizzaSelection = () => {
     };
 
     return (
-        <div>
-            <p>Customise your order</p>
-            <form className="p-10 bg-gray-50 w-2/5 shadow-md mx-auto" onSubmit={savePizzaDetails}>
+        <div className="p-10">
+            <form className="p-10 text-xl bg-gray-50 w-2/5 shadow-md mx-auto" onSubmit={savePizzaDetails}>
+                <p className="text-xl">Customise your order</p>
                 <FormControl component="fieldset">
                     <p className="font-bold">Select size</p>
                     <RadioGroup 

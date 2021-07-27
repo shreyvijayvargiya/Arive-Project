@@ -1,5 +1,5 @@
 
-import { ADD_USER_DETAIL, ADD_PIZZA_DETAILS } from '../constants';
+import { ADD_USER_DETAIL, ADD_PIZZA_DETAILS, ADD_CARD_DETAILS } from '../constants';
 
 export const addUserDetailInStore = (data) => {
     return async dispatch => {
@@ -13,6 +13,14 @@ export const addPizaDetails = payload => {
     return async dispatch => {
         dispatch({ 
             type: ADD_PIZZA_DETAILS,
+            payload
+        })
+    }
+};
+export const addCardDetails = payload => {
+    return async dispatch => {
+        dispatch({
+            type: ADD_CARD_DETAILS,
             payload
         })
     }

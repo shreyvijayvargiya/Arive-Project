@@ -26,13 +26,13 @@ const Address = () => {
     const handleSubmit = e => {
         e.preventDefault();
         dispatch(addUserDetailInStore(values));
-        router.push("/placeorder")
+        router.push("/customiseorder")
     };
 
     return (
         <div className="p-10">
             <form className="p-10 bg-gray-50 w-2/5 shadow-md mx-auto" onSubmit={handleSubmit}>
-                <p>Fill adress to place order</p>
+                <p className="text-xl ">Fill adress to place order</p>
                 <br />
                 <label>Name</label>
                 <br />
