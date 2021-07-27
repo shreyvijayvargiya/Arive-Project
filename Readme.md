@@ -23,7 +23,7 @@
 </ol>
 
 <h4>Hosted link</h4>
-<a href="">Click the link to reach the hosted url</a>
+<a href="https://arive-project.vercel.app/" target="_blank">Click the link to reach the hosted url</a>
 
 <h4>How to run</h4>
  
