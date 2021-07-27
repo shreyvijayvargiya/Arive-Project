@@ -1,7 +1,7 @@
 import React from 'react';
-import { Home } from '../Components';
+import { Address, Home } from '../Components';
 
 const App = () => {
-    return <Home />
+    return <Address />
 };
 export default App;
