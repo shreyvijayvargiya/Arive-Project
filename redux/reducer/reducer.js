@@ -1,14 +1,14 @@
-import { ADD_USERS } from '../constants';
+import { ADD_USER_DETAIL } from '../constants';
 
 const initialState = {
-    users: []
+    userDetails: []
 };
 export const reducer = (state = initialState, action) => {
     switch(action.type){
-        case ADD_USERS:{
+        case ADD_USER_DETAIL:{
             return {
                 ...state, 
-                users: action.payload
+                userDetails: action.payload
             }
         }
         default:
