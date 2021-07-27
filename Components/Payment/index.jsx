@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Button, makeStyles, TextField } from '@material-ui/core';
 import { useDispatch } from 'react-redux';
 import valid from "card-validator";
-import validator from 'validator';
 import { addCardDetails } from '../../redux/action/action';
 import InputMask from 'react-input-mask';
 import router from 'next/router';
@@ -52,7 +51,7 @@ const Payment = () => {
     return (
         <div className="p-10">
             <form className="p-10 bg-gray-50 w-2/5 shadow-md mx-auto" onSubmit={submitCardDetails}>
-                <p>Add card details</p>
+                <p className="text-xl my-2">Add card details</p>
                 <label>Card Number</label>
                 <br />
                 <InputMask
