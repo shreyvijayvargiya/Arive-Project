@@ -40,7 +40,8 @@ const Payment = () => {
 
     function submitCardDetails(e){
         e.preventDefault();
-        if(error.error){
+        const isCardValid = valid.number(cardDetails.cardNumber).isPotentiallyValid;
+        if(error.error || !isCardValid){
             alert("Please fill the card details")
         }else {
             dispatch(addCardDetails(cardDetails));
